@@ -5,6 +5,7 @@ This app was good practice of using the Math.random() function to generate rando
 
 Functions to implement in the future:
 
--  To be able to copy the password to the clipboard after clicking the password
+-  To be able to copy the password to the clipboard after clicking the password (COMPLETED)
+-  Add a button pressed effect when generating passwords (COMPLETED)
+-  Add a small tooltip once passsword is copied
 -  Hide the password with an optional toggle to see it after clicking on it
--  Add a button pressed effect when generating passwords
