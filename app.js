@@ -113,3 +113,26 @@ function generatePassword() {
   }
   return random;
 }
+
+//Copy Passwords to clipboard
+passwordOne.addEventListener("click", () => document.execCommand("copy"));
+
+passwordOne.addEventListener("copy", (e) => {
+  e.preventDefault();
+  if (e.clipboardData) {
+    e.clipboardData.setData("text/plain", passwordOne.textContent);
+    console.log(e.clipboardData.getData("text"));
+  }
+});
+
+passwordTwo.addEventListener("click", () => {
+  document.execCommand("copy");
+});
+
+passwordTwo.addEventListener("copy", (e) => {
+  e.preventDefault();
+  if (e.clipboardData) {
+    e.clipboardData.setData("text/plain", passwordTwo.textContent);
+    console.log(e.clipboardData.getData("text"));
+  }
+});

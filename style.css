@@ -1,76 +1,87 @@
 body {
-    display:flex;
-    justify-content: center;
-    background: #0284C7;
-    font-family: 'Zen Maru Gothic', sans-serif;
-  }
-  
-  .container {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 550px;
-    height: 550px;
-    background: #E0F2FE;
-  }
-  
-  .text-box {
-    margin-top: 5em;
-  }
-  
-  h1 {
-    font-weight: 900;
-    font-size: 2.5rem;
-    display:block;
-    max-width: 335px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .second-h1 {
-    color: #0EA5E9;
-  }
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 3.5em;
-    font-size: 1.1rem;
-  }
-  
-  button {
-   width: 180px;
-   height: 40px;
-   color: #FFFFFF;
-   background: #0EA5E9;
-   border: none;
-   border-radius: 6px;
-   font-size: 1rem;
-   font-family: 'Zen Maru Gothic', sans-serif;
-  }
-  
-  .passwordBox{
-    display:flex;
-    flex-direction: row;
-    border-top: 1px solid #D5D4D8;
-    margin-top: 2.5em;
-    padding-top: 2em;
-  }
-  
-  .passwordOne, .passwordTwo {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: #273549;
-    color: white;
-    border-radius: 6px;
-    height: 45px;
-    width: 200px;
-    font-size: 1rem;
-    color: #7DD3FC;
-  }
-  
-  .passwordTwo {
-    margin-left: 1.9em;
-  }
-  
+  display:flex;
+  justify-content: center;
+  background: #0284C7;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 550px;
+  height: 550px;
+  background: #E0F2FE;
+}
+
+.text-box {
+  margin-top: 5em;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  display:block;
+  max-width: 335px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.second-h1 {
+  color: #0EA5E9;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 3.5em;
+  font-size: 1.1rem;
+}
+
+button {
+ width: 180px;
+ height: 40px;
+ color: #FFFFFF;
+ background: #0EA5E9;
+ border: none;
+ border-radius: 6px;
+ font-size: 1rem;
+ font-family: 'Zen Maru Gothic', sans-serif;
+ cursor: pointer;
+}
+
+.passwordOne:hover,.passwordTwo:hover{
+  margin-top: 2px;
+  border-bottom-width: 1px;
+  cursor: pointer;
+}
+.passwordOne:active, .passwordTwo:active, button:active{
+  margin-top: 2px;
+  border-bottom-width: 1px;
+}
+
+.passwordBox{
+  display:flex;
+  flex-direction: row;
+  border-top: 1px solid #D5D4D8;
+  margin-top: 2.5em;
+  padding-top: 2em;
+}
+
+.passwordOne, .passwordTwo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #273549;
+  color: white;
+  border-radius: 6px;
+  height: 45px;
+  width: 200px;
+  font-size: 1rem;
+  color: #7DD3FC;
+  cursor: pointer;
+}
+
+.passwordTwo {
+  margin-left: 1.9em;
+}
