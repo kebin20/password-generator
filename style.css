@@ -85,3 +85,17 @@ button {
 .passwordTwo {
   margin-left: 1.9em;
 }
+
+.tooltip{
+  display:none;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 15px;
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 3em;
+  padding: 0.5em;
+  color: #273549;
+}
+

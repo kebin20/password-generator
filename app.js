@@ -1,4 +1,4 @@
-//Global variable
+// Global variable
 const characters = [
   "A",
   "B",
@@ -108,14 +108,20 @@ function randomCharacters() {
 
 function generatePassword() {
   let random = randomCharacters();
-  for (i = 0; i < 15; i++) {
+  for (let i = 0; i < 15; i++) {
     random += randomCharacters();
   }
   return random;
 }
 
-//Copy Passwords to clipboard
-passwordOne.addEventListener("click", () => document.execCommand("copy"));
+// Copy Passwords to clipboard
+passwordOne.addEventListener("click", () => {
+  document.execCommand("copy");
+  showToolTip();
+  setTimeout(() => {
+    removeToolTip();
+  }, 1000);
+});
 
 passwordOne.addEventListener("copy", (e) => {
   e.preventDefault();
@@ -127,6 +133,10 @@ passwordOne.addEventListener("copy", (e) => {
 
 passwordTwo.addEventListener("click", () => {
   document.execCommand("copy");
+  showToolTip();
+  setTimeout(() => {
+    removeToolTip();
+  }, 1000);
 });
 
 passwordTwo.addEventListener("copy", (e) => {
@@ -136,3 +146,11 @@ passwordTwo.addEventListener("copy", (e) => {
     console.log(e.clipboardData.getData("text"));
   }
 });
+
+function showToolTip() {
+  document.getElementById("tooltip").style.display = "block";
+}
+
+function removeToolTip() {
+  document.getElementById("tooltip").style.display = "none";
+}

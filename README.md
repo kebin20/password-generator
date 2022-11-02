@@ -7,5 +7,5 @@ Functions to implement in the future:
 
 -  To be able to copy the password to the clipboard after clicking the password (COMPLETED)
 -  Add a button pressed effect when generating passwords (COMPLETED)
--  Add a small tooltip once passsword is copied
+-  Add a small tooltip once passsword is copied (COMPLETED)
 -  Hide the password with an optional toggle to see it after clicking on it
